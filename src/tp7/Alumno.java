@@ -1,15 +1,14 @@
 
 package tp7;
 
+import java.util.ArrayList;
+
 
 public class Alumno {
     private int legajo;
     private String apellido;
     private String nombre;
-
-    public Alumno() {
-    }
-   
+    private ArrayList <Materia> inscripciones = new ArrayList<>();
 
     public Alumno(int legajo, String apellido, String nombre) {
         this.legajo = legajo;
@@ -41,20 +40,25 @@ public class Alumno {
         this.nombre = nombre;
     }
 
+    public ArrayList<Materia> getInscripciones() {
+        return inscripciones;
+    }
+
+       
+    public void agregarMaterias(Materia m){
+        inscripciones.add(m);
+
+    }
+
     @Override
     public String toString() {
-        return "(" + "legajo:" + legajo + ", apellido=" + apellido + ", nombre=" + nombre + ")"  ;
+        return this.getNombre();
     }
     
-}   
     
-//    public void agregarMaterias(Materia m){       
-//      
-//            materias.add(m);
-//  
-//        System.out.println(" se inscribe en las siguientes materias: "+materias);
-//   
-//    }
+}
+
+
 //    
 //    public int cantidadMaterias(){
 //        int cantidadmat=0;

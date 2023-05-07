@@ -1,36 +1,31 @@
 
 package tp7;
 
-
 public class Materia {
-    private int idmateria;
+    private int idMateria;
     private String nombreMat;
     private int anio;
 
-    public Materia() {
-    }
-    
-
-    public Materia(int idmateria, String nombreMat, int anio) {
-        this.idmateria = idmateria;
+    public Materia(int idMateria, String nombreMat, int anio) {
+        this.idMateria = idMateria;
         this.nombreMat = nombreMat;
         this.anio = anio;
     }
 
-    public int getIdmateria() {
-        return idmateria;
+    public int getIdMateria() {
+        return idMateria;
     }
 
-    public void setIdmateria(int idmateria) {
-        this.idmateria = idmateria;
+    public void setIdMateria(int idMateria) {
+        this.idMateria = idMateria;
     }
 
     public String getNombreMat() {
         return nombreMat;
     }
 
-    public void setNombreMat(String nombre) {
-        this.nombreMat = nombre;
+    public void setNombreMat(String nombreMat) {
+        this.nombreMat = nombreMat;
     }
 
     public int getAnio() {
@@ -43,8 +38,7 @@ public class Materia {
 
     @Override
     public String toString() {
-        return "{" + "idmateria=" + idmateria + ", nombreMat=" + nombreMat + ", anio=" + anio + '}';
+        return this.getNombreMat();
     }
-    
     
 }
